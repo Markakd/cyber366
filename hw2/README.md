@@ -13,7 +13,7 @@ make
 
 > note: to have a better debugging experience, you can compile the demo with debug information inside. Please check the Makefile for details.
 
-## vulnerability
+## Vulnerability
 ``` c
 int foo(char str2[]){
 	char array[4];
@@ -36,7 +36,7 @@ Go through the statement.
 
 ![](https://i.imgur.com/t78Uhz7.png)
 
-Check the stack memory layout before the return of function foo.
+Check the instructions before the return of function foo.
 
 ![](https://i.imgur.com/IL9cx1P.png)
 
@@ -89,4 +89,7 @@ python -c "print('A'*16 + '\x30\x83\x04\x08' + 'BBBB' + '\x7c\xa0\x04\x08'+'ls')
 
 
 ## What to submit
-Please take screenshot of each steps.
+Please take screenshot of each step in the debugging process for three dinstructions
+1. the process of going through statements
+2. the stack memory layout before executing ret instruction in function `foo`
+3. the output of the program after sending the payload
