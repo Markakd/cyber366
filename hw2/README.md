@@ -89,7 +89,7 @@ python -c "print('A'*16 + '\x30\x83\x04\x08' + 'BBBB' + '\x7c\xa0\x04\x08'+'ls')
 
 
 ## What to submit
-Please take screenshot of each step in the debugging process for three dinstructions
+Please take screenshot of each step below during the debugging process for three different payloads, paste them in a word document, and turn it in through canvas.
 1. the process of going through statements
 2. the stack memory layout before executing ret instruction in function `foo`
 3. the output of the program after sending the payload
